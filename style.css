@@ -1,0 +1,14 @@
+.custom-input {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    background-color: transparent;
+    box-shadow: none;
+    transition: border-color 0.3s ease;
+}
+
+.custom-input:focus {
+    border-bottom: 2px solid #ff0000; /* vermelho da logo */
+    outline: none;
+    box-shadow: none;
+}
