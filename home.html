@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Missão Impossível - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+        <a class="navbar-brand" href="#">
+            <img src="assets/MI-logo-removebg-preview-removebg-preview 1.png" alt="Logo" style="height: 40px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active" href="home.html">Visão Geral</a></li>
+                <li class="nav-item"><a class="nav-link" href="saga.html">Saga MI</a></li>
+                <li class="nav-item"><a class="nav-link" href="elenco.html">Elenco</a></li>
+                <li class="nav-item"><a class="nav-link" href="personagens.html">Personagens</a></li>
+                <li class="nav-item"><a class="nav-link" href="curiosidades.html">Curiosidades</a></li>
+                <li class="nav-item"><a class="nav-link" href="imagens.html">Imagens</a></li>
+                <li class="nav-item"><a class="nav-link" href="trilha-sonora.html">Trilha Sonora</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-black text-white text-center py-5">
+        <img src="assets/MI-logo-removebg-preview-removebg-preview 1.png" alt="Logo" style="height: 80px;">
+        <h1 class="mt-3">Sua missão, se você aceitá-la...</h1>
+        <p class="lead">Explore o universo da saga Missão Impossível</p>
+    </section>
+
+    <!-- Sobre Missão Impossível -->
+   <section class="container my-5">
+    <div class="row align-items-stretch">
+        <div class="col-md-4 d-flex">
+            <img src="assets/poster-1.jpg" alt="Poster MI" class="img-fluid rounded w-100 h-100 object-fit-cover">
+        </div>
+        <div class="col-md-8 d-flex flex-column justify-content-center">
+            <h2>O que é Missão Impossível?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Minus hic animi fuga! Totam impedit porro, nulla aliquid itaque quod officiis ipsum aut facilis commodi cupiditate provident nihil reiciendis.</p>
+            <ul class="list-group mt-3">
+                <li class="list-group-item">🔍 Saga de espionagem cheia de ação</li>
+                <li class="list-group-item">🎬 Estrelada por Tom Cruise</li>
+                <li class="list-group-item">🎞️ Mais de 25 anos de história no cinema</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+    <!-- Carousel de imagens -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Momentos Icônicos</h2>
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/cena-1.png"class="d-block w-100 h-20" style="height: 400px; object-fit: cover;" alt="Imagem 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/cena-2.jpg"class="d-block w-100 h-20" style="height: 400px; object-fit: cover;" alt="Imagem 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/cena-3.jpg"class="d-block w-100 h-20" style="height: 400px; object-fit: cover;" alt="Imagem 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Cards da saga -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Filmes da Saga</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="assets/capa-1.jpg" class="card-img-top" style="height: 400px; object-fit: cover;" alt="MI 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Missão Impossível (1996)</h5>
+                        <p class="card-text">Primeira missão de Ethan Hunt nas telonas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="assets/capa-2.jpg" class="card-img-top" style="height: 400px; object-fit: cover;" alt="MI 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Missão Impossível 2 (2000)</h5>
+                        <p class="card-text">Ação explosiva e cenas marcantes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="assets/capa-3.jpeg" class="card-img-top" style="height: 400px; object-fit: cover;" alt="MI 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Missão Impossível 3 (2006)</h5>
+                        <p class="card-text">Um dos vilões mais icônicos da saga.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accordion de curiosidades -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Curiosidades</h2>
+        <div class="accordion" id="accordionCuriosidades">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                        Tom Cruise faz suas próprias acrobacias?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionCuriosidades">
+                    <div class="accordion-body">
+                        Sim! Tom Cruise é conhecido por realizar suas acrobacias em cena, aumentando a autenticidade dos filmes.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                        Quantos filmes compõem a saga?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionCuriosidades">
+                    <div class="accordion-body">
+                        Atualmente a saga conta com 7 filmes lançados, e mais um em produção.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p class="mb-0">© 2025 Missão Impossível Fan Site. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
