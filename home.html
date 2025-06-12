@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Missão Impossível - Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="home.css">
 </head>
-<body>
+<body id="topo">
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
-        <a class="navbar-brand" href="#">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 sticky-top">
+        <a class="navbar-brand" href="#topo">
             <img src="assets/MI-logo-removebg-preview-removebg-preview 1.png" alt="Logo" style="height: 40px;">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -18,13 +19,11 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link active" href="home.html">Visão Geral</a></li>
-                <li class="nav-item"><a class="nav-link" href="saga.html">Saga MI</a></li>
-                <li class="nav-item"><a class="nav-link" href="elenco.html">Elenco</a></li>
+                <li class="nav-item"><a class="nav-link" href="#topo">Visão Geral</a></li>
+                <li class="nav-item"><a class="nav-link" href="#filmes">Saga MI</a></li>
+                <li class="nav-item"><a class="nav-link" href="#momentos">Momentos Épicos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#curiosidades">Curiosidades</a></li>
                 <li class="nav-item"><a class="nav-link" href="personagens.html">Personagens</a></li>
-                <li class="nav-item"><a class="nav-link" href="curiosidades.html">Curiosidades</a></li>
-                <li class="nav-item"><a class="nav-link" href="imagens.html">Imagens</a></li>
-                <li class="nav-item"><a class="nav-link" href="trilha-sonora.html">Trilha Sonora</a></li>
             </ul>
         </div>
     </nav>
@@ -37,25 +36,25 @@
     </section>
 
     <!-- Sobre Missão Impossível -->
-   <section class="container my-5">
-    <div class="row align-items-stretch">
-        <div class="col-md-4 d-flex">
-            <img src="assets/poster-1.jpg" alt="Poster MI" class="img-fluid rounded w-100 h-100 object-fit-cover">
+    <section class="container my-5">
+        <div class="row align-items-stretch">
+            <div class="col-md-4 d-flex">
+                <img src="assets/poster-1.jpg" alt="Poster MI" class="img-fluid rounded w-100 h-100 object-fit-cover">
+            </div>
+            <div class="col-md-8 d-flex flex-column justify-content-center">
+                <h2>O que é Missão Impossível?</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Minus hic animi fuga! Totam impedit porro, nulla aliquid itaque quod officiis ipsum aut facilis commodi cupiditate provident nihil reiciendis.</p>
+                <ul class="list-group mt-3">
+                    <li class="list-group-item">🔍 Saga de espionagem cheia de ação</li>
+                    <li class="list-group-item">🎬 Estrelada por Tom Cruise</li>
+                    <li class="list-group-item">🎞️ Mais de 25 anos de história no cinema</li>
+                </ul>
+            </div>
         </div>
-        <div class="col-md-8 d-flex flex-column justify-content-center">
-            <h2>O que é Missão Impossível?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Minus hic animi fuga! Totam impedit porro, nulla aliquid itaque quod officiis ipsum aut facilis commodi cupiditate provident nihil reiciendis.</p>
-            <ul class="list-group mt-3">
-                <li class="list-group-item">🔍 Saga de espionagem cheia de ação</li>
-                <li class="list-group-item">🎬 Estrelada por Tom Cruise</li>
-                <li class="list-group-item">🎞️ Mais de 25 anos de história no cinema</li>
-            </ul>
-        </div>
-    </div>
-</section>
+    </section>
 
     <!-- Carousel de imagens -->
-    <section class="container my-5">
+    <section id="momentos" class="container my-5">
         <h2 class="text-center mb-4">Momentos Icônicos</h2>
         <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -78,10 +77,12 @@
         </div>
     </section>
 
+
     <!-- Cards da saga -->
-    <section class="container my-5">
+    <section id="filmes" class="container my-5">
         <h2 class="text-center mb-4">Filmes da Saga</h2>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <!-- Card 1 -->
             <div class="col">
                 <div class="card h-100">
                     <img src="assets/capa-1.jpg" class="card-img-top" style="height: 400px; object-fit: cover;" alt="MI 1">
@@ -91,21 +92,73 @@
                     </div>
                 </div>
             </div>
+            <!-- Card 2 -->
             <div class="col">
                 <div class="card h-100">
-                    <img src="assets/capa-2.jpg" class="card-img-top" style="height: 400px; object-fit: cover;" alt="MI 1">
+                    <img src="assets/capa-2.jpg" class="card-img-top" style="height: 400px; object-fit: cover;" alt="MI 2">
                     <div class="card-body">
                         <h5 class="card-title">Missão Impossível 2 (2000)</h5>
                         <p class="card-text">Ação explosiva e cenas marcantes.</p>
                     </div>
                 </div>
             </div>
+            <!-- Card 3 -->
             <div class="col">
                 <div class="card h-100">
-                    <img src="assets/capa-3.jpeg" class="card-img-top" style="height: 400px; object-fit: cover;" alt="MI 1">
+                    <img src="assets/capa-3.jpeg" class="card-img-top" style="height: 400px; object-fit: cover;" alt="MI 3">
                     <div class="card-body">
                         <h5 class="card-title">Missão Impossível 3 (2006)</h5>
                         <p class="card-text">Um dos vilões mais icônicos da saga.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="assets/capa-4.jpg" class="card-img-top" style="height: 400px; object-fit: cover;" alt="MI 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Missão Impossível - Protocolo Fantasma (2011)</h5>
+                        <p class="card-text">Novos desafios e cenas épicas.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="assets/capa-5.jpg" class="card-img-top" style="height: 400px; object-fit: cover;" alt="MI 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Missão Impossível - Nação Secreta (2015)</h5>
+                        <p class="card-text">Uma corrida contra o tempo.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="assets/capa-6.jpg" class="card-img-top" style="height: 400px; object-fit: cover;" alt="MI 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Missão Impossível - Efeito Fallout (2018)</h5>
+                        <p class="card-text">A missão mais arriscada de Ethan Hunt.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 7 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="assets/capa-7.jpg" class="card-img-top" style="height: 400px; object-fit: cover;" alt="MI 7">
+                    <div class="card-body">
+                        <h5 class="card-title">Missão Impossível - Acerto de Contas Parte Um (2023)</h5>
+                        <p class="card-text">A primeira parte de uma nova grande missão.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 8 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="assets/capa-8.jpg" class="card-img-top" style="height: 400px; object-fit: cover;" alt="MI 8">
+                    <div class="card-body">
+                        <h5 class="card-title">Missão Impossível - Acerto de Contas Parte Dois (2025)</h5>
+                        <p class="card-text">Próximo lançamento da franquia.</p>
                     </div>
                 </div>
             </div>
@@ -113,9 +166,10 @@
     </section>
 
     <!-- Accordion de curiosidades -->
-    <section class="container my-5">
+    <section id="curiosidades" class="container my-5">
         <h2 class="text-center mb-4">Curiosidades</h2>
         <div class="accordion" id="accordionCuriosidades">
+            <!-- Curiosidade 1 -->
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
@@ -128,6 +182,7 @@
                     </div>
                 </div>
             </div>
+            <!-- Curiosidade 2 -->
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
@@ -137,6 +192,45 @@
                 <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionCuriosidades">
                     <div class="accordion-body">
                         Atualmente a saga conta com 7 filmes lançados, e mais um em produção.
+                    </div>
+                </div>
+            </div>
+            <!-- Curiosidade 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                        Qual cena foi a mais difícil de filmar?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionCuriosidades">
+                    <div class="accordion-body">
+                        A cena em que Tom Cruise escala o Burj Khalifa foi uma das mais desafiadoras da franquia.
+                    </div>
+                </div>
+            </div>
+            <!-- Curiosidade 4 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                        Quem dirigiu o primeiro filme?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionCuriosidades">
+                    <div class="accordion-body">
+                        O primeiro filme da franquia foi dirigido por Brian De Palma.
+                    </div>
+                </div>
+            </div>
+            <!-- Curiosidade 5 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                        O tema musical da franquia é original?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionCuriosidades">
+                    <div class="accordion-body">
+                        Sim, a música tema foi composta originalmente para a série de TV de 1966, e é adaptada nos filmes.
                     </div>
                 </div>
             </div>
